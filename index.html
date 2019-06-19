@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- style样式代码 -->
+		<style>
+			html {
+				height: 100%;
+				width: 100%;
+			}
+			body {
+				height: 100%;
+				width: 100%;
+			}
+			div {
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				height: 100%;
+				width: 100%;
+			}
+			#page1 {
+				background-image: url(img/halloween1.jpg);
+				/* background-repeat: no-repeat; */
+				/* background-size: 100% 100%; */
+				/* height: 100%; */
+				/* width: 100%; */
+				-display: none;
+			}
+			#title {
+				position: fixed;
+				left: 380px;
+				top: 170px;
+				animation: titlemove 3s infinite;
+			}
+			@keyframes titlemove{
+					from{
+						opacity: 0;
+					}
+					to{
+						opacity: 1;
+					}
+				}
+			#box {
+				position: fixed;
+				left: 330px;
+				bottom: 390px;
+				animation: boxmove 1s infinite;
+			}
+			@keyframes boxmove{
+				0%{
+					left:330px;
+				}
+				40%{
+					left:360px;
+				}
+				100%{
+					left: 340px;
+				}
+			}
+			#page2 {
+				background-image: url(img/halloween2.jpg);
+				/* background-repeat: no-repeat; */
+				/* background-size: 100% 100%; */
+				/* height: 100%; */
+				/* width: 100%; */
+				display: none;
+			}
+			#pump {
+				position: fixed;
+				left: 295px;
+				top: 110px;
+			}
+			#start {
+				position: fixed;
+				left: 400px;
+				bottom: 435px;
+			}
+			#page3 {
+				background-image: url(img/halloweenMain3.jpg);
+				display: none
+			}
+			#charm01 {
+				position: fixed;
+				left: 50px;
+				top: 100px;
+				animation: charm01 4s infinite;
+			}
+			@keyframes charm01{
+				0%{
+					left: 50px;
+					top: 100px;
+					opacity: 0.8;
+					
+				}
+				25%{
+					left:220px ;
+					top: 120px;
+					opacity: 0.4;
+				}
+				50%{
+					left:60px ;
+					top: 240px;
+					opacity: 0.3;
+				}
+			}
+			#charm02 {
+				position: fixed;
+				left: 250px;
+				top: 400px;
+				animation: charm02 10s infinite;
+			}
+			@keyframes charm02{
+				10%{
+					left: 350px;
+					top: 430px;
+				}
+				20%{
+					left: 450px;
+					top: 460px;
+				}
+				30%{
+					left: 550px;
+					top: 490px;
+				}
+				40%{
+					left: 650px;
+					top: 520px;
+				}
+				50%{
+					left: 750px;
+					top: 550px;
+				}
+			}
+			#charm03 {
+				position: fixed;
+				left: 50px;
+				top: 650px;
+				animation: charm03 8s infinite;
+			}
+			@keyframes charm03{
+				50%{
+					top: 1350px;
+				}
+				100%{
+					top: 650px;
+				}
+			}
+			#charm04 {
+				position: fixed;
+				left: 500px;
+				top: 50px;
+				animation: charm04 4s infinite;
+			}
+			@keyframes charm04{
+				10%{
+					left: 720px;
+					top: 120px;
+					opacity: 0.5;
+				}
+				15%{
+					left: 600px;
+					top: 300px;
+					opacity: 0.7;
+				}
+				35%{
+					left: 600px;
+					top: 300px;
+					opacity: 0.2;
+				}
+				60%{
+					left: 650px;
+					top: 170px;
+					opacity: 0.4;
+				}
+				85%{
+					opacity: 0.6;
+				}
+			}
+			#charm05 {
+				position: fixed;
+				left: 400px;
+				top: 900px;
+				animation: charm05 5s infinite;
+			}
+			@keyframes charm05{
+				20%{
+					left: 500px;
+					top: 950px;
+					opacity: 0.8;
+				}
+				40%{
+					left: 300px;
+					top: 1000px;
+					opacity: 0.5;
+				}
+				60%{
+					left: 500px;
+					top: 1050px;
+					opacity: 0.8;
+				}
+				75%{
+					left: 300px;
+					top: 1000px;
+					opacity: 0.5;
+				}
+				85%{
+					left: 500px;
+					top: 950px;
+					opacity: 0.8;
+				}
+				100%{
+					left: 400px;
+					top: 900px;
+					opacity: 0.5;
+				}
+			}
+			#charm06 {
+				position: fixed;
+				left: 300px;
+				top: 700px;
+				animation: charm06 9s infinite;
+			}
+			@keyframes charm06{
+				0%{
+					left: 300px;
+					top: 700px;
+				}
+				25%{
+					left: 800px;
+					top: 700px;
+				}
+				50%{
+					left: 800px;
+					top: 1400px;
+				}
+				75%{
+					left: 800px;
+					top: 700px;
+				}
+				100%{
+					left: 300px;
+					top: 700px;
+				}
+			}
+			#charm07 {
+				position: fixed;
+				right: 50px;
+				bottom: 300px;
+				animation: charm07 3s infinite;
+			}
+			@keyframes charm07{
+				-0%{
+					transform: scale(1);
+				}
+				-30%{
+					transform: scale(0.8);
+				}
+				50%{
+					transform: scale(0.3);
+				}
+				100%{
+					transform: scale(1);
+				}
+			}
+			
+			#page4 {
+				background-image: url(img/charm1.jpg);
+				display: none;
+			}
+			
+		</style>
+		<script>
+			function next(shuzi) {
+				var page1 = document.getElementById("page1");
+				var page2 = document.getElementById("page2");
+				var page3 = document.getElementById("page3");
+				var page4 = document.getElementById("page4");
+				page1.style.display = "none";
+				page2.style.display = "none";
+				page3.style.display = "none";
+				page4.style.display = "none";
+				var p = "page" + shuzi;
+				//alert(p);
+				var pp1 = document.getElementById(p);
+				//alert(pp1);
+				pp1.style.display="block";
+			}
+			function suiji(){
+				next(4);
+				var suijishu = Math.floor(Math.random()*7+1);
+				var pic = "url(img/charm"+suijishu+".jpg)";
+				//alert(pic);
+				//var bbb = document.getElementById(page4);
+				//alert(bbb);
+				//bbb.style.backgroundImage=aaa;
+				var p4 =document.getElementById("page4");
+				p4.style.backgroundImage=pic;
+			}
+			function zhiding(c){
+				var pic1 = "url(img/charm"+c+".jpg)";
+				var p5 =document.getElementById("page4");
+				p5.style.backgroundImage=pic1;
+				
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="page1">
+			<img id="title" src="img/title.png">
+			<img id="box" src="img/box.png" onclick="next(2)">
+		</div>
+		<div id="page2">
+			<img id="pump" src="img/pumpkin.png">
+			<img id="start" src="img/startGame.jpg" onclick="next(3)">
+		</div>
+		<div id="page3">
+			<img id="charm01" src="img/1.png" onclick="zhiding(1),next(4)"/>
+			<img id="charm02" src="img/2.png" onclick="zhiding(2),next(4)"/>
+			<img id="charm03" src="img/3.png" onclick="zhiding(3),next(4)"/>
+			<img id="charm04" src="img/4.png" onclick="zhiding(4),next(4)"/>
+			<img id="charm05" src="img/5.png" onclick="zhiding(5),next(4)"/>
+			<img id="charm06" src="img/6.png" onclick="zhiding(6),next(4)"/>
+			<img id="charm07" src="img/7.png" onclick="zhiding(7),next(4)"/>
+		</div>
+		<div id="page4" onclick="next(1)">
+
+		</div>
+	</body>
+</html>
